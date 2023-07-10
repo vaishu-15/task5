@@ -407,7 +407,7 @@ span {
 .container{
     padding:10px 50px;
     position:relative;
-    width:45%;
+    width:50%;
     background: rgb(113, 147, 210);
 }
 .text-box{
@@ -460,6 +460,11 @@ span {
     left:50%;
 }
 
+.Pricing-container{
+    width:100%;
+    min-height:100vh;
+    background:rgb(181, 181, 198);
+}
 footer {
     padding: 5rem 5%;
 }
@@ -615,6 +620,26 @@ footer {
         font-size: 3rem;
         margin-left: 10rem;
         text-align: center;
+    }
+}
+@media screen and (max-width: 600px){
+    .timeline {
+        margin: 50px auto;
+    }
+    .timeline::after{
+        left: 31px;
+    }
+    .container{
+        width:100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .text-box{
+        font-size:13px;
+    }
+    .text-box small{margin-bottom: 10px;}
+    .right-container{
+        left:0;
     }
 }
 
