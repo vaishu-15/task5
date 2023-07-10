@@ -5,25 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding-----Planner</title>
+    <title>Wedding Planning</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
     <header class="head">
-        <a href="#" class="logo"><i class="fas fa-heart"></i>&nbsp;Wed<span>Me</span>Good&nbsp;<i class="fas fa-heart"></i></a>
+        <a href="#" class="logo"><i class="fas fa-heart">
+        </i>&nbsp;Wed Me Good&nbsp;
+        <i class="fas fa-heart"></i></a>
         <nav class="navbar ">
             <a href="#" class="active">Home</a>
             <a href="#service">Service</a>
             <a href="#vendor">Vendors</a>
             <a href="#venue">Venue</a>
             <a href="#invite">E-invites</a>
-            <a href="#contact">Contact</a>
+            <a href="#moments">Timeline</a>
+            <a href="#login">Login</a>
         </nav>
         <div id="menu-bar"><i class="fas fa-bars"></i></div>
     </header>
-    <!---------------------------Home--------------------->
     <section class="home" id="home">
         <form action="#">
             <div class="search-box">
@@ -39,69 +41,67 @@
         </select>
                 <select type="text" class="search-field">
             <option disabled selected>City</option>
-            <option value="Anand">Anand</option>
-            <option value="Ahemdabad">Ahemdabad</option>
+            <option value="Anand">Delhi</option>
+            <option value="Ahemdabad">Gurugram</option>
             <option value="Mumbai">Mumbai</option>
-            <option value="Baroda">Baroda</option>
+            <option value="Baroda">Moradabad</option>
             <option value="Goa">Goa</option>
         </select>
                 <button class="btn">Search</button>
             </div>
         </form>
     </section>
-
-    <!------------------------services-------------------->
     <section class="service" id="service">
         <div class="title">
-            <h1><span>S</span>ervice</h1>
+            <h1>Service</h1>
         </div>
         <div class="services-row">
             <div class="services-col">
                 <i class="fas fa-book-open"></i>
                 <h2>invitation</h2>
-                <p>Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae.</p>
+                <p></p>
             </div>
             <div class="services-col">
                 <i class="fas fa-camera"></i>
                 <h2>Photography & Video</h2>
-                <p>Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae.</p>
+                <p></p>
             </div>
             <div class="services-col">
                 <i class="fas fa-brush"></i>
                 <h2>Beauty & Makeup</h2>
-                <p>Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae.</p>
+                <p></p>
             </div>
             <div class="services-col">
                 <i class="fab fa-pagelines"></i>
                 <h2>Wedding flowers</h2>
-                <p>Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae.</p>
+                <p></p>
             </div>
             <div class="services-col">
                 <i class="fas fa-birthday-cake"></i>
                 <h2>wedding cake</h2>
-                <p>Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae.</p>
+                <p></p>
             </div>
             <div class="services-col">
                 <i class="fas fa-music"></i>
                 <h2>music band</h2>
-                <p>Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae.</p>
+                <p></p>
             </div>
             <div class="services-col">
                 <i class="fas fa-utensils"></i>
                 <h2>Catering</h2>
-                <p>Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae.</p>
+                <p></p>
             </div>
-            <div class="services-col">
+            <!-- <div class="services-col">
                 <i class="fas fa-ring"></i>
                 <h2>Jewellery</h2>
-                <p>Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae.</p>
-            </div>
+                <p></p>
+            </div> -->
         </div>
     </section>
-    <!-----------------------------vendor------------------->
+    
     <section class="vendor" id="vendor">
         <div class="title">
-            <h1><span>F</span>eatured <span>V</span>endor</h1>
+            <h1>Featured Vendor</h1>
         </div>
         <div class="vendor-list">
             <div class="vendor-row">
@@ -148,17 +148,16 @@
             </div>
         </div>
     </section>
-    <!----------------------------venue Section-------------->
     <section class="venue" id="venue">
         <div class="title">
-            <h1><span>V</span>enues</h1>
+            <h1>Venues</h1>
         </div>
         <div class="venue-list">
             <div class="venue-box">
                 <img src="venue-5.jpg" alt="img">
                 <div class="venue-info">
                     <h2>Goa</h2>
-                    <p>Azaya Beach Resort, Goa</p>
+                    <p> Holiday Inn, Goa</p>
                     <button class="btn">More Info</button>
                 </div>
             </div>
@@ -174,7 +173,7 @@
                 <img src="venue-3.jpg" alt="img">
                 <div class="venue-info">
                     <h2>Udaipur</h2>
-                    <p>Taj Aravalli Resort and Spa</p>
+                    <p>Ram Pratap Palace</p>
                     <button class="btn">More Info</button>
                 </div>
             </div>
@@ -204,11 +203,9 @@
             </div>
         </div>
     </section>
-    <!------------------E-invitation------------------>
     <section class="invite" id="invite">
         <div class="title">
-            <h1>Card<span>Design</span></h1>
-            <p>Choose the best card Design.</p>
+            <h1>Card Design</h1>
         </div>
         <div class="invitation-row">
             <div class="invitation-box">
@@ -249,13 +246,54 @@
             </div>
         </div>
     </section>
-
-    <!--------------------------------------------footer section--------------------------->
-    <footer id="contact">
+    <section class="timeline" id="Timeline">
+        <div class="title">
+            <h1><span>T</span>imeline</h1>
+        </div>
+        <div class="container left-container">
+            <div class="text-box">
+                <h2>Jaipur</h2>
+                <small>2017-1018
+                </small>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+        <div class="container right-container">
+            <div class="text-box">
+                <h2>Goa</h2>
+                <small>2018-1019
+                </small>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div><div class="container left-container">
+            <div class="text-box">
+                <h2>Udaipur</h2>
+                <small>2019-2020
+                </small>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div><div class="container right-container">
+            <div class="text-box">
+                <h2>Mumbai</h2>
+                <small>2019-1020
+                </small>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div><div class="container left-container">
+            <div class="text-box">
+                <h2>Pune</h2>
+                <small>2021-2022
+                </small>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="login">
         <div class="container">
             <div class="f-container">
-                <h2>WedMeGood - Your Personal Wedding Planner</h2><br>
-                <p>Plan your wedding with Us WedMeGood is an Indian Wedding Planning Website </p>
+                <h2>Wed Me Good - Your Personal Wedding Planner</h2><br>
+                <p>Plan your wedding with Us Wed Me Good is an Indian Wedding Planning Website </p>
                 <div>
                     <button class="btn">Register as a Vendor</button>
                 </div>
@@ -272,7 +310,7 @@
                 <a href="#"><i class="fas fa-angle-right"></i>Anand</a>
                 <a href="#"><i class="fas fa-angle-right"></i>Vadodara</a>
                 <a href="#"><i class="fas fa-angle-right"></i>Mumbai</a>
-                <a href="#" "><i class=" fas fa-angle-right "></i>Ahemdabad</a>
+                <a href="#" ><i class=" fas fa-angle-right "></i>Ahemdabad</a>
                     <a href="# "><i class="fas fa-angle-right "></i>Surat</a>
                 </div>
                 
