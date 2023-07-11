@@ -1,29 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
     <style>
-        body{
-            background:rgb(136, 136, 244);
-            margin:20px;
-            width:100%;
-        }
-        .container{
-
-        }
+      body {
+        background: rgb(136, 136, 244);
+        margin: 20px;
+        width: ;
+      }
+      .grid-container {
+        display: grid;
+        column gap:50px;
+        grid-template-columns:auto auto;
+        padding:10px;
+      }
+      .grid-item {
+        font-size:xx-large;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+      }
+      .grid-item h2{
+        color:lightpink;
+        text-align: center;
+        margin-top: 100px;
+      }
+      .grid-item p{
+        font-size: 18px;
+        margin-left: 40px;
+        margin-right: 40px;
+        line-break: auto;
+        color:honeydew ;
+      }
+      .img{
+        text-align: center;
+      }
 
     </style>
-</head>
-<body>
-    <div class="container">
-    <div class="img">
-        <img src="im1.jpg" alt="profile pic">
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="profile-pic.jpeg" alt="profile pic" width="450" height="550" />
+      </div>
+      <div class="grid-item">
         <h2>Vaishali Yadav</h2>
+        <p>Highly motivated individual seeking an opportunity to apply my technical skills and gain valuable industry experience. I aim to contribute to the development and implementation of innovative software solutions while expanding my knowledge of cutting-edge technologies.</p>
+           <div class="img">
+            <img src="instagram.jpeg" alt="profile pic" width="23" height="25" />
+            <img src="twitter.png" alt="profile pic" width="23" height="25" />
+            </div>
+          </div>
+      </div>
     </div>
-    <div>
-    </div>
-    </div>
-</body>
+  </body>
 </html>
