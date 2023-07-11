@@ -1,75 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: 'Arial Narrow', Arial, sans-serif;
-        }
-        body{
-            background:rgb(236, 215, 188);
-            background-size: cover;
-            display:flex;
-            flex-direction: column;
-            color:black ;
-        }
-        header{
-            position:fixed;
-            top:0;
-            height:90px;
-            width:100%;
-            background-color: rgb(230, 176, 189);
-            display:flex ;
-            justify-content: space-between;
-        }
-        .logo{
-
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial Narrow", Arial, sans-serif;
+      }
+      body {
+        background: rgb(236, 215, 188);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        color: black;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        height: 90px;
+        width: 100%;
+        background-color: rgb(230, 176, 189);
+        display: flex;
+        justify-content: space-between;
+        z-index: 2;
+        padding: 0 64px;
+        font-size: 1.2em;
+        align-items: center;
+      }
+      .logo {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 25px;
+        letter-spacing: 0.5px;
+      }
+      .menu-list li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 80px;
+        cursor: pointer;
+        transition: color 0.5s;
+      }
+      .menu-list li.active,
+      .menu-list li:hover {
+        background-color: rgb(235, 235, 202);
+      }
+      .main {
+        padding-top: 90px;
+        position: relative;
+        flex: 1;
+        display: flex;
+      }
+      .left-container {
+        max-width: 50%;
+        padding: 0 64px;
+      }
+      .title {
+        font-size: larger;
+        letter-spacing: 1px;
+        margin: 190px auto;
+      }
+      .title b {
+        font-size: xx-large;
+        display: block;
+        line-height: 80px;
+      }
+      .info {
+        max-width: 80%;
+        letter-spacing: 0.7px;
+        line-height: 32px;
+        margin-top: -190px;
+        margin-bottom: 60px;
+      }
+      button.cta {
+        border: none;
+        outline: none;
+        background-color: rgb(255, 252, 252);
+        color: brown;
+        padding: 18px 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        box-shadow: 7px 12px 20px;
+        font-size: larger;
+        cursor: pointer;
+      }
+      button span {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+     
+      .container-main {
+        display: flex;
+        margin-top: 5px auto;
+        margin-right: 200px;
+        
+      }
+     
+      .right-container{
+        margin-top: 40px;
+      }
+      .colors{
+        display:flex;
+        margin-right: 4px;
+      }
     </style>
-
-</head>
-<body>
-        <header>
-        <div class="logo">
-        <img src="finalshoe-removebg-preview.png" alt="logo" width="110px" height="110px">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="finalshoe-removebg-preview.png"
+          alt="logo"
+          width="110px"
+          height="110px"
+        />
         Knee-Hi
-        </div>
-     <ul>
+      </div>
+      <ul class="menu-list">
         <li>Home</li>
         <li>Product</li>
         <li>About</li>
         <li>Contact</li>
-     </ul>
+      </ul>
     </header>
-    <section>
+    <div class="container-main">
+      <section>
         <div class="left-container">
-        <p class="title">Are you ready to <b>lead the way?</b></p>
-        <p>Shoes- Shop for branded shoes at Knee-Hi. Select from huge variety of stylish shoes online at an affordable price.Grab your shoes now.</p>
-        <button class="cta" ><span>Buy now</span></button>
+          <p class="title">Are you ready to <b>lead the way?</b></p>
+          <p class="info">
+            Shoes- Shop for branded shoes at Knee-Hi. Select from huge variety
+            of stylish shoes online at an affordable price.Grab your shoes now.
+          </p>
+          <button class="cta"><span>Buy now</span></button>
         </div>
-    </section>
-    <section>
+      </section>
+      <section class="main">
         <div class="right-container">
-            <img src="shoeimg-removebg-preview.png" alt="shoes">
-            <div class="colors">
-                <div class="item yellow active">
-                    <div class="color-selector"></div>
-                    <img src="shoeimg-removebg-preview.png" width="180" > 
-                </div>
-                <div class="item blue">
-                    <div class="color-selector"></div>
-                    <img src="blueshoe.png" width="200"> 
-                </div>
-                <div class="item pink">
-                    <div class="color-selector"></div>
-                    <img src="pinkshoe-removebg-preview.png" width="200"> 
-                </div>
+          <img src="shoeimg-removebg-preview.png" alt="shoes" width="350" />
+          <div class="colors">
+            <div class="item yellow active">
+              <div class="color-selector"></div>
+              <img src="shoeimg-removebg-preview.png" width="90" />
             </div>
+            <div class="item blue">
+              <div class="color-selector"></div>
+              <img src="blueshoe.png" width="100" />
+            </div>
+            <div class="item pink">
+              <div class="color-selector"></div>
+              <img src="pinkshoe-removebg-preview.png" width="100" />
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+    </div>
+  </body>
 </html>
