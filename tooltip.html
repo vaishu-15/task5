@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:50px;
+            text-align: center;
+        }
+        span {
+    color: rgb(63, 110, 210);
+    font-size: 20px;
+}
+.tooltip
+{
+   position: relative;
+   display: inline-block;
+}
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 5px 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
+
+ .tooltip{
+    top:0;
+    position:relative;
+    max-width:1200px;
+    margin:10px auto;
+}
+.container{
+    padding:10px 50px;
+    position:relative;
+    width:42%;
+    background: rgb(113, 147, 210);
+}
+.text-box{
+    padding:20px 30px;
+    background: #fff;
+    position:relative;
+    border-radius: 6px;
+    font-size: 15px;
+    width:300px;
+    text-align: right;
+}
+.timeline::after{
+    content: '';
+    position:absolute;
+    width:6px;
+    height:100%;
+    background: #fff;
+    top:0;
+    left:50%;
+    margin-left: -3px;
+    z-index:-1;
+}
+.left-container-arrow{
+    height:0;
+    width:0;
+    position:absolute;
+    top:28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left:15px solid#fff;
+    right:-15px;
+}
+.right-container-arrow{
+    height:0;
+    width:0;
+    position:absolute;
+    top:28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right:15px solid#fff;
+    left:-15px;
+}
+.left-container{
+   left:0;
+
+}
+.right-container{
+    left:50%;
+}
+    </style>
+</head>
+<body>
+<section class="timeline" id="Timeline">
+      <div class="tooltip"><h1>Timeline</h1>
+        <span class="tooltiptext">Showing Timeline</span>
+        <br>
+      </div>
+      <div class="container left-container">
+        <div class="text-box">
+          <h2>Jaipur</h2>
+          <small>2017-1018 </small>
+          <span class="left-container-arrow"></span>
+        </div>
+      </div>
+      <div class="container right-container">
+        <div class="text-box">
+          <h2>Goa</h2>
+          <small>2018-1019 </small>
+          <span class="right-container-arrow"></span>
+        </div>
+      </div>
+      <div class="container left-container">
+        <div class="text-box">
+          <h2>Udaipur</h2>
+          <small>2019-2020 </small>
+          <span class="left-container-arrow"></span>
+        </div>
+      </div>
+      <div class="container right-container">
+        <div class="text-box">
+          <h2>Mumbai</h2>
+          <small>2019-1020 </small>
+          <span class="right-container-arrow"></span>
+        </div>
+      </div>
+      <div class="container left-container">
+        <div class="text-box">
+          <h2>Pune</h2>
+          <small>2021-2022 </small>
+          <span class="left-container-arrow"></span>
+        </div>
+      </div>
+    </section>
+    </body>
+</html>
